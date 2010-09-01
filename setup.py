@@ -11,6 +11,8 @@ Links
 * `development version
   <http://github.com/sublee/flask-silk/zipball/master#egg=flask-silk-dev>`_
 
+.. _silk icons: http://www.famfamfam.com/lab/icons/silk
+
 """
 try:
     from setuptools import setup
@@ -25,7 +27,7 @@ setup(
     license="BSD",
     author="Lee Heung-sub",
     author_email="heung@sublee.kr",
-    description="Adds `silk icons`_ to your Flask application or module, "
+    description="Adds silk icons to your Flask application or module, "
                 "or extension.",
     long_description=__doc__,
     packages=["flaskext", "flaskext.silk"],
