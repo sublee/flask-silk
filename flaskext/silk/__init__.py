@@ -3,8 +3,8 @@
     flaskext.silk
     ~~~~~~~~~~~~~
 
-    A small extension for adding `Silk icons
-    <http://www.famfamfam.com/lab/icons/silk/>`_.
+    A small extension for adding `Silk
+    <http://www.famfamfam.com/lab/icons/silk/>`_ icons.
 
     :copyright: (c) 2010 by Lee Heung-sub.
     :license: BSD, see LICENSE for more details.
