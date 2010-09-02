@@ -1,17 +1,17 @@
 """
-flask-silk
+Flask-Silk
 ----------
 
-Adds `silk icons`_ to your Flask application or module, or extension.
+Adds `silk`_ icons to your Flask application or module, or extension.
 
 Links
 `````
 
-* `documentation <http://packages.python.org/flask-silk>`_
+* `documentation <http://packages.python.org/Flask-Silk>`_
 * `development version
   <http://github.com/sublee/flask-silk/zipball/master#egg=flask-silk-dev>`_
 
-.. _silk icons: http://www.famfamfam.com/lab/icons/silk
+.. _silk: http://www.famfamfam.com/lab/icons/silk
 
 """
 try:
@@ -21,7 +21,7 @@ except ImportError:
 
 
 setup(
-    name="flask-silk",
+    name="Flask-Silk",
     version="0.1.0",
     url="http://github.com/sublee/flask-silk",
     license="BSD",

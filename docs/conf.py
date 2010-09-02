@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# flask-silk documentation build configuration file, created by
+# Flask-Silk documentation build configuration file, created by
 # sphinx-quickstart on Wed Sep  1 22:13:48 2010.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -41,7 +41,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'flask-silk'
+project = u'Flask-Silk'
 copyright = u'2010, Lee Heung-sub'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -168,7 +168,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'flask-silkdoc'
+htmlhelp_basename = 'Flask-Silkdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -182,7 +182,7 @@ htmlhelp_basename = 'flask-silkdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'flask-silk.tex', u'flask-silk Documentation',
+  ('index', 'Flask-Silk.tex', u'Flask-Silk Documentation',
    u'Lee Heung-sub', 'manual'),
 ]
 
@@ -215,6 +215,6 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'flask-silk', u'flask-silk Documentation',
+    ('index', 'flask-silk', u'Flask-Silk Documentation',
      [u'Lee Heung-sub'], 1)
 ]
