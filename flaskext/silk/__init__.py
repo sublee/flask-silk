@@ -39,9 +39,14 @@ class Silk(object):
         rule = silk_path + "/<filename>"
         self.silkicon = self.base.route(rule)(self.silkicon)
 
-    def silkicon(self, filename=None, iconname=None, ext="png"):
-        directory = os.path.join(os.path.dirname(__file__), "icons")
-        if not filename:
-            filename = iconname + os.path.extsep + ext
-        return send_from_directory(directory, filename)
+    def silkicon(self, filename):
+        return send_silkicon(filename)
+
+
+def send_silkicon(filename=None, iconname=None, ext="png"):
+    """Sends a silk icon. The icon is in a shared directory."""
+    directory = os.path.join(os.path.dirname(__file__), "icons")
+    if not filename:
+        filename = iconname + os.path.extsep + ext
+    return send_from_directory(directory, filename)
 
