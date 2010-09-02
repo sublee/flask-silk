@@ -21,7 +21,7 @@ class Silk(object):
         app = Flask(__name__)
         silk = Silk(app)
 
-    Or it works to your Flask module::
+    Or it works with your Flask module::
 
         from flask import Module
         from flaskext.silk import Silk

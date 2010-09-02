@@ -3,15 +3,20 @@ flask-silk
 
 .. module:: flaskext.silk
 
-flask-silk adds `silk icons`_ to your Flask application or module, or
-extension!
+flask-silk is small Flask extension. It adds `silk`_ icons to your Flask
+application or module, or extension!
 
-Silk icons are very awesome. So these are expected to be used by many good
-Flask extensions. But if you use many Flask extensions which contains silk
-icons, you'll lose your storage space too much. Flask extensions should import
-this small extension if these need.
+Silk is very awesome. It will good for your Flask extensions. But if someone
+use many Flask extensions which contains silk icons, they will lose their
+storage space too much. They can solve the problem with flask-silk.
 
-.. _silk icons: http://www.famfamfam.com/lab/icons/silk
+.. note::
+   Silk is licensed under a `Creative Commons Attribution 2.5 License.
+   <http://creativecommons.org/licenses/by/2.5/>`_ or
+   `3.0 License <http://creativecommons.org/licenses/by/3.0/>`_. Before using
+   the icons, read the license.
+
+.. _silk: http://www.famfamfam.com/lab/icons/silk
 
 Installation
 ============
