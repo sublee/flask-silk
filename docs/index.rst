@@ -6,9 +6,9 @@ flask-silk
 flask-silk is small Flask extension. It adds `silk`_ icons to your Flask
 application or module, or extension!
 
-Silk is very awesome. It will good for your Flask extensions. But if someone
-use many Flask extensions which contains silk icons, they will lose their
-storage space too much. They can solve the problem with flask-silk.
+Silk is very awesome. It will be good for your Flask extensions. But if
+someone use many Flask extensions which contains silk icons, they will lose
+their storage space too much. They can solve the problem with flask-silk.
 
 .. note::
    Silk is licensed under a `Creative Commons Attribution 2.5 License.
