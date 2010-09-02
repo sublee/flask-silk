@@ -14,13 +14,19 @@ from flask import send_from_directory
 
 
 class Silk(object):
-    """This small extension add :meth:`silkicon` to your Flask application or
-    module. Just::
+    """This small extension adds :meth:`silkicon` to your Flask application::
 
         from flask import Flask
         from flaskext.silk import Silk
         app = Flask(__name__)
         silk = Silk(app)
+
+    Or it works to your Flask module::
+
+        from flask import Module
+        from flaskext.silk import Silk
+        mod = Module(__name__)
+        silk = Silk(mod)
 
     :param base: a flask application or module
     :param silk_path: a path to serve silk icons. default is ``/icons``.
