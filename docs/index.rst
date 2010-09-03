@@ -10,10 +10,12 @@ Silk is very awesome. It will be good for your Flask extensions. But if
 someone use many Flask extensions which contains silk icons, they will lose
 their storage space too much. They can solve the problem with Flask-Silk.
 
+If you want to preview silk icons, visit :doc:`/dict`.
+
 .. note::
-   Silk is licensed under a `Creative Commons Attribution 2.5 License.
-   <http://creativecommons.org/licenses/by/2.5/>`_ or
-   `3.0 License <http://creativecommons.org/licenses/by/3.0/>`_. Before using
+   Silk is licensed under a `Creative Commons Attribution 2.5 License
+   <http://creativecommons.org/licenses/by/2.5>`_ or
+   `3.0 License <http://creativecommons.org/licenses/by/3.0>`_. Before using
    the icons, read the license.
 
 .. _silk: http://www.famfamfam.com/lab/icons/silk
@@ -50,20 +52,16 @@ It also works with Flask module::
 API
 ===
 
-.. autoclass:: flaskext.silk.Silk
+.. autoclass:: Silk
    :members:
 
-.. autofunction:: flaskext.silk.send_silkicon
+.. autofunction:: send_silkicon
 
-
-Silk Icon Dictionary
-====================
-
-.. automodule:: flaskext.silk.icons
 
 Indices and tables
 ==================
 
+* :doc:`/dict`
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
