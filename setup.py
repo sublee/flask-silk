@@ -22,7 +22,7 @@ except ImportError:
 
 setup(
     name="Flask-Silk",
-    version="0.1.0",
+    version="0.1.1",
     url="http://github.com/sublee/flask-silk",
     license="BSD",
     author="Lee Heung-sub",
