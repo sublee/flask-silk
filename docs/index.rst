@@ -50,8 +50,16 @@ It also works with Flask module::
 API
 ===
 
-.. autoclass:: Silk
+.. autoclass:: flaskext.silk.Silk
    :members:
+
+.. autofunction:: flaskext.silk.send_silkicon
+
+
+Silk Icon Dictionary
+====================
+
+.. automodule:: flaskext.silk.icons
 
 Indices and tables
 ==================

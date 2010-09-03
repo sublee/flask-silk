@@ -44,7 +44,16 @@ class Silk(object):
 
 
 def send_silkicon(filename=None, iconname=None, ext="png"):
-    """Sends a silk icon. The icon is in a shared directory."""
+    """Sends a silk icon. The icon is in a shared directory.
+
+    An example::
+
+        from flaskext.silk import send_silkicon
+        from myapplication import app
+        @app.route("/static/icons/<filename>")
+        def icon(filename):
+            return send_silkicon(filename)
+    """
     directory = os.path.join(os.path.dirname(__file__), "icons")
     if not filename:
         filename = iconname + os.path.extsep + ext
