@@ -28,9 +28,25 @@ class Silk(object):
         mod = Module(__name__)
         silk = Silk(mod)
 
+    Now the application or module's ``/icons/<filaname>`` is bound to
+    :meth:`silkicon` for serves a prepared silk icon.
+
+    Also you can work with your own icon directory::
+
+        import os.path
+        my_icons = os.path.join(silk.base.static_path, "icons")
+        my_icons2 = os.path.join(silk.base.static_path, "other-icons")
+        silk.register_icon_directory(my_icons)
+        silk.register_icon_directory(my_icons2)
+
+    Silk finds the icon in the registered directories first. If the icon does
+    not exist in any directories, Silk finds the prepared silk icon.
+
     :param base: a flask application or module
     :param silk_path: a path to serve silk icons. default is ``/icons``.
     """
+
+    directories = []
 
     def __init__(self, base, silk_path="/icons"):
         self.base = base
@@ -39,23 +55,35 @@ class Silk(object):
         rule = silk_path + "/<filename>"
         self.silkicon = self.base.route(rule)(self.silkicon)
 
+    def register_icon_directory(self, path):
+        self.directories.append(path)
+
     def silkicon(self, filename):
-        return send_silkicon(filename)
+        return send_silkicon(filename, directories=self.directories)
 
 
-def send_silkicon(filename=None, iconname=None, ext="png"):
-    """Sends a silk icon. The icon is in a shared directory.
-
-    An example::
+def send_silkicon(filename, directories=[]):
+    """Sends an icon. The icon is in a shared directory or specified
+    directories. Here's a simple examples of how to send an icon::
 
         from flaskext.silk import send_silkicon
         from myapplication import app
+
+        my_icons = os.path.join(app.static_path, "icons")
+        my_icons2 = os.path.join(app.static_path, "other-icons")
+
         @app.route("/static/icons/<filename>")
         def icon(filename):
-            return send_silkicon(filename)
+            return send_silkicon(filename, directories=[my_icons, my_icons2])
+
+    :param filename: a filename for icon
+    :param directories: specified icon directories
     """
+    for directory in directories:
+        try:
+            return send_from_directory(directory, filename)
+        except Exception:
+            pass
     directory = os.path.join(os.path.dirname(__file__), "icons")
-    if not filename:
-        filename = iconname + os.path.extsep + ext
     return send_from_directory(directory, filename)
 
