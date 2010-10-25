@@ -25,7 +25,7 @@ setup(
     version="0.1.1",
     url="http://github.com/sublee/flask-silk",
     license="BSD",
-    author="Lee Heung-sub",
+    author="Heungsub Lee",
     author_email="heung@sublee.kr",
     description="Adds silk icons to your Flask application or module, "
                 "or extension.",
