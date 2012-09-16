@@ -6,11 +6,20 @@
     A small extension for adding `Silk
     <http://www.famfamfam.com/lab/icons/silk/>`_ icons.
 
-    :copyright: (c) 2010 by Lee Heung-sub.
+    :copyright: (c) 2010-2012 by Heungsub Lee.
     :license: BSD, see LICENSE for more details.
 """
-import os.path
+import os
+
 from flask import send_from_directory
+
+
+__copyright__ = 'Copyright 2010-2012 by Heungsub Lee'
+__license__ = 'BSD License'
+__author__ = 'Heungsub Lee'
+__email__ = 'h''@''subl.ee'
+__version__ = '0.1.2'
+__all__ = ['Silk', 'send_silkicon']
 
 
 class Silk(object):
@@ -34,8 +43,8 @@ class Silk(object):
     Also you can work with your own icon directory::
 
         import os.path
-        my_icons = os.path.join(silk.base.static_path, "icons")
-        my_icons2 = os.path.join(silk.base.static_path, "other-icons")
+        my_icons = os.path.join(silk.base.static_path, 'icons')
+        my_icons2 = os.path.join(silk.base.static_path, 'other-icons')
         silk.register_icon_directory(my_icons)
         silk.register_icon_directory(my_icons2)
 
@@ -48,11 +57,11 @@ class Silk(object):
 
     directories = []
 
-    def __init__(self, base, silk_path="/icons"):
+    def __init__(self, base, silk_path='/icons'):
         self.base = base
-        if not silk_path.startswith("/"):
-            silk_path = "/" + silk_path
-        rule = silk_path + "/<filename>"
+        if not silk_path.startswith('/'):
+            silk_path = '/' + silk_path
+        rule = silk_path + '/<filename>'
         self.silkicon = self.base.route(rule)(self.silkicon)
 
     def register_icon_directory(self, path):
@@ -69,10 +78,10 @@ def send_silkicon(filename, directories=[]):
         from flaskext.silk import send_silkicon
         from myapplication import app
 
-        my_icons = os.path.join(app.static_path, "icons")
-        my_icons2 = os.path.join(app.static_path, "other-icons")
+        my_icons = os.path.join(app.static_path, 'icons')
+        my_icons2 = os.path.join(app.static_path, 'other-icons')
 
-        @app.route("/static/icons/<filename>")
+        @app.route('/static/icons/<filename>')
         def icon(filename):
             return send_silkicon(filename, directories=[my_icons, my_icons2])
 
@@ -84,6 +93,5 @@ def send_silkicon(filename, directories=[]):
             return send_from_directory(directory, filename)
         except Exception:
             pass
-    directory = os.path.join(os.path.dirname(__file__), "icons")
+    directory = os.path.join(os.path.dirname(__file__), 'icons')
     return send_from_directory(directory, filename)
-

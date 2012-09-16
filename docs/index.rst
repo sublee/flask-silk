@@ -13,17 +13,21 @@ their storage space too much. They can solve the problem with Flask-Silk.
 If you want to preview silk icons, visit :doc:`/dict`.
 
 .. note::
-   Silk is licensed under a `Creative Commons Attribution 2.5 License
+   Silk is licensed under `Creative Commons Attribution 2.5
    <http://creativecommons.org/licenses/by/2.5>`_ or
-   `3.0 License <http://creativecommons.org/licenses/by/3.0>`_. Before using
-   the icons, read the license.
+   `3.0 <http://creativecommons.org/licenses/by/3.0>`_. Before using the icons,
+   read the license.
 
 .. _silk: http://www.famfamfam.com/lab/icons/silk
 
 Installation
 ============
 
-Check out development version::
+Install via `PyPI <http://pypi.python.org/pypi/Flask-Silk>`_::
+
+    $ easy_install Flask-Silk
+
+Or check out development version::
 
     $ git clone git://github.com/sublee/flask-silk.git
 
@@ -57,7 +61,6 @@ API
 
 .. autofunction:: send_silkicon
 
-
 Indices and tables
 ==================
 
@@ -65,4 +68,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
