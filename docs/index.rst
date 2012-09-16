@@ -13,10 +13,10 @@ their storage space too much. They can solve the problem with Flask-Silk.
 If you want to preview silk icons, visit :doc:`/dict`.
 
 .. note::
-   Silk is licensed under `Creative Commons Attribution 2.5
+   Silk is licensed under `Creative Commons Attribution 2.5 License
    <http://creativecommons.org/licenses/by/2.5>`_ or
-   `3.0 <http://creativecommons.org/licenses/by/3.0>`_. Before using the icons,
-   read the license.
+   `3.0 License <http://creativecommons.org/licenses/by/3.0>`_. Before using
+   the icons, read the license.
 
 .. _silk: http://www.famfamfam.com/lab/icons/silk
 
