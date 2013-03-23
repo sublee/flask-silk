@@ -1,5 +1,5 @@
 include LICENSE test.py
-recursive-include flaskext/silk/icons *
+recursive-include flask_silk/icons *
 include docs/*.rst docs/conf.py
 recursive-include docs/_static *
 recursive-include docs/_themes *.py *.css *.css_t *.conf *.html LICENSE README
