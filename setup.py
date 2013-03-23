@@ -27,13 +27,12 @@ setup(
     description='Adds silk icons to your Flask application or module, or ' \
                 'extension.',
     long_description=__doc__,
-    packages=['flaskext', 'flaskext.silk'],
+    packages=['flask_silk'],
     include_package_data=True,
-    package_data={'flaskext.silk': ['icons/*']},
-    namespace_packages=['flaskext'],
+    package_data={'flask_silk': ['icons/*']},
     zip_safe=False,
     platforms='any',
-    install_requires=['Flask'],
+    install_requires=['Flask >= 0.8'],
     test_suite='test',
     classifiers=[
         'Development Status :: 4 - Beta',

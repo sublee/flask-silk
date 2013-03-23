@@ -1,7 +1,7 @@
 Flask-Silk
 ~~~~~~~~~~
 
-.. module:: flaskext.silk
+.. module:: flask_silk
 
 Flask-Silk is small Flask extension. It adds `silk`_ icons to your Flask
 application or module, or extension!
@@ -38,7 +38,7 @@ If you want to contain silk icons to your application, follow the below
 example::
 
     from flask import Flask
-    from flaskext.silk import Silk
+    from flask.ext.silk import Silk
     app = Flask(__name__)
     silk = Silk(app)
 
@@ -49,7 +49,7 @@ In your application, you can get an icon's url by::
 It also works with Flask module::
 
     from flask import Module
-    from flaskext.silk import Silk
+    from flask.ext.silk import Silk
     mod = Module(__name__)
     silk = Silk(mod)
 
