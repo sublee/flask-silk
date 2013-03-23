@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    flaskext.silk
+    flask_silk
     ~~~~~~~~~~~~~
 
     A small extension for adding `Silk
@@ -26,14 +26,14 @@ class Silk(object):
     """This small extension adds :meth:`silkicon` to your Flask application::
 
         from flask import Flask
-        from flaskext.silk import Silk
+        from flask.ext.silk import Silk
         app = Flask(__name__)
         silk = Silk(app)
 
     Or it works with your Flask module::
 
         from flask import Module
-        from flaskext.silk import Silk
+        from flask.ext.silk import Silk
         mod = Module(__name__)
         silk = Silk(mod)
 
@@ -75,7 +75,7 @@ def send_silkicon(filename, directories=[]):
     """Sends an icon. The icon is in a shared directory or specified
     directories. Here's a simple examples of how to send an icon::
 
-        from flaskext.silk import send_silkicon
+        from flask.ext.silk import send_silkicon
         from myapplication import app
 
         my_icons = os.path.join(app.static_path, 'icons')
