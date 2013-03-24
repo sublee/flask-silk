@@ -4,7 +4,7 @@ Flask-Silk
 .. module:: flask_silk
 
 Flask-Silk is small Flask extension. It adds `silk`_ icons to your Flask
-application or module, or extension!
+application or blueprint, or extension!
 
 Silk is very awesome. It will be good for your Flask extensions. But if
 someone use many Flask extensions which contains silk icons, they will lose
@@ -46,12 +46,12 @@ In your application, you can get an icon's url by::
 
     url_for("silkicon", filename="bug.png")
 
-It also works with Flask module::
+It also works with Flask blueprint::
 
-    from flask import Module
+    from flask import Blueprint
     from flask.ext.silk import Silk
-    mod = Module(__name__)
-    silk = Silk(mod)
+    blu = Blueprint(__name__, __name__)
+    silk = Silk(blu)
 
 API
 ===
