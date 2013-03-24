@@ -44,7 +44,7 @@ example::
 
 In your application, you can get an icon's url by::
 
-    url_for("silkicon", filename="bug.png")
+    url_for('silkicon', filename='bug.png')
 
 It also works with Flask blueprint::
 
