@@ -26,14 +26,14 @@ class Silk(object):
         app = Flask(__name__)
         silk = Silk(app)
 
-    Or it works with your Flask module::
+    Or it works with your Flask blueprint::
 
-        from flask import Module
+        from flask import Blueprint
         from flask.ext.silk import Silk
-        mod = Module(__name__)
-        silk = Silk(mod)
+        blu = Blueprint(__name__, __name__)
+        silk = Silk(blu)
 
-    Now the application or module's ``/icons/<filaname>`` is bound to
+    Now the application or blueprint's ``/icons/<filaname>`` is bound to
     :meth:`silkicon` for serves a prepared silk icon.
 
     Also you can work with your own icon directory::
@@ -47,8 +47,8 @@ class Silk(object):
     Silk finds the icon in the registered directories first. If the icon does
     not exist in any directories, Silk finds the prepared silk icon.
 
-    :param base: a flask application or module
-    :param silk_path: a path to serve silk icons. default is ``/icons``.
+    :param base: the flask application or blueprint.
+    :param silk_path: the path to serve silk icons. Defaults to ``/icons``.
     """
 
     directories = []
@@ -81,8 +81,8 @@ def send_silkicon(filename, directories=[]):
         def icon(filename):
             return send_silkicon(filename, directories=[my_icons, my_icons2])
 
-    :param filename: a filename for icon
-    :param directories: specified icon directories
+    :param filename: the filename for icon.
+    :param directories: specified icon directories.
     """
     for directory in directories:
         try:

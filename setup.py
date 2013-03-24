@@ -2,7 +2,7 @@
 Flask-Silk
 ----------
 
-Adds `silk`_ icons to your Flask application or module, or extension.
+Adds `silk`_ icons to your Flask application or blueprint, or extension.
 
 Links
 `````
@@ -25,7 +25,7 @@ setup(
     author='Heungsub Lee',
     author_email=re.sub('((sub).)(.*)', r'\2@\1.\3', 'sublee'),
     url='http://github.com/sublee/flask-silk',
-    description='Adds silk icons to your Flask application or module, or '
+    description='Adds silk icons to your Flask application or blueprint, or '
                 'extension.',
     long_description=__doc__,
     packages=['flask_silk'],
