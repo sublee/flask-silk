@@ -6,7 +6,7 @@
     A small extension for adding `Silk
     <http://www.famfamfam.com/lab/icons/silk/>`_ icons.
 
-    :copyright: (c) 2010-2012 by Heungsub Lee.
+    :copyright: (c) 2010-2013 by Heungsub Lee.
     :license: BSD, see LICENSE for more details.
 """
 import os
@@ -14,10 +14,6 @@ import os
 from flask import send_from_directory
 
 
-__copyright__ = 'Copyright 2010-2012 by Heungsub Lee'
-__license__ = 'BSD License'
-__author__ = 'Heungsub Lee'
-__email__ = 'h''@''subl.ee'
 __version__ = '0.1.2'
 __all__ = ['Silk', 'send_silkicon']
 

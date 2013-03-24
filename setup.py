@@ -14,17 +14,18 @@ Links
 .. _silk: http://www.famfamfam.com/lab/icons/silk
 
 """
+import re
 from setuptools import setup
 
 
 setup(
     name='Flask-Silk',
     version='0.1.2',
-    url='http://github.com/sublee/flask-silk',
     license='BSD',
     author='Heungsub Lee',
-    author_email='h@subl.ee',
-    description='Adds silk icons to your Flask application or module, or ' \
+    author_email=re.sub('((sub).)(.*)', r'\2@\1.\3', 'sublee'),
+    url='http://github.com/sublee/flask-silk',
+    description='Adds silk icons to your Flask application or module, or '
                 'extension.',
     long_description=__doc__,
     packages=['flask_silk'],
@@ -32,7 +33,7 @@ setup(
     package_data={'flask_silk': ['icons/*']},
     zip_safe=False,
     platforms='any',
-    install_requires=['Flask >= 0.8'],
+    install_requires=['Flask>=0.8'],
     test_suite='test',
     classifiers=[
         'Development Status :: 4 - Beta',
