@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
     flask_silk
-    ~~~~~~~~~~~~~
+    ~~~~~~~~~~
 
     A small extension for adding `Silk
     <http://www.famfamfam.com/lab/icons/silk/>`_ icons.
@@ -14,7 +14,7 @@ import os
 from flask import send_from_directory
 
 
-__version__ = '0.1.2'
+__version__ = '0.2'
 __all__ = ['Silk', 'send_silkicon']
 
 

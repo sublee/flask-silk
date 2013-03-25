@@ -20,7 +20,7 @@ from setuptools import setup
 
 setup(
     name='Flask-Silk',
-    version='0.1.2',
+    version='0.2',
     license='BSD',
     author='Heungsub Lee',
     author_email=re.sub('((sub).)(.*)', r'\2@\1.\3', 'sublee'),
