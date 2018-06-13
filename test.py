@@ -2,7 +2,7 @@ import unittest
 
 from flask import Flask, Blueprint
 
-from flask.ext.silk import Silk
+from flask_silk import Silk
 
 
 class ApplicationTestCase(unittest.TestCase):
