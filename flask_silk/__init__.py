@@ -22,14 +22,14 @@ class Silk(object):
     """This small extension adds :meth:`silkicon` to your Flask application::
 
         from flask import Flask
-        from flask.ext.silk import Silk
+        from flask_silk import Silk
         app = Flask(__name__)
         silk = Silk(app)
 
     Or it works with your Flask blueprint::
 
         from flask import Blueprint
-        from flask.ext.silk import Silk
+        from flask_silk import Silk
         blu = Blueprint(__name__, __name__)
         silk = Silk(blu)
 
@@ -71,7 +71,7 @@ def send_silkicon(filename, directories=[]):
     """Sends an icon. The icon is in a shared directory or specified
     directories. Here's a simple examples of how to send an icon::
 
-        from flask.ext.silk import send_silkicon
+        from flask_silk import send_silkicon
         from myapplication import app
 
         my_icons = os.path.join(app.static_path, 'icons')
